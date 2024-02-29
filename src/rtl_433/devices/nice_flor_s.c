@@ -25,7 +25,7 @@ A packet is made of 52 bits (13 nibbles S0 to S12):
 */
 
 #include "decoder.h"
-// #include "nice_flor_s_table_decode.h"
+#include "nice_flor_s_table_decode.h"
 #include "nice_flor_s_table_ki.h"
 
 static int nice_flor_s_decode(r_device *decoder, bitbuffer_t *bitbuffer)
@@ -44,8 +44,7 @@ static int nice_flor_s_decode(r_device *decoder, bitbuffer_t *bitbuffer)
         encbuff[i+1] = ((b[i] << 4) & 0xf0) | ((b[i+1] >> 4) & 0x0f);
     }
     uint16_t enccode = ((encbuff[2] << 8) & 0xff00) | (encbuff[3] & 0x00ff);
-    // uint16_t deccode = nice_flor_s_table_decode[enccode];
-    uint16_t deccode = enccode;
+    uint16_t deccode = nice_flor_s_table_decode[enccode];
     uint8_t ki = nice_flor_s_table_ki[deccode & 0xff] ^ (enccode & 0xff);
     uint8_t       snbuff[4];
     snbuff[3] = (encbuff[1] ^ ki) & 0x0f;
