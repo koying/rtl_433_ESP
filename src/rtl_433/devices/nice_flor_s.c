@@ -85,6 +85,5 @@ r_device const nice_flor_s = {
         .reset_limit = 5000,
         .tolerance   = 100,
         .decode_fn   = &nice_flor_s_decode,
-        .disabled    = 1,
         .fields      = output_fields,
 };
