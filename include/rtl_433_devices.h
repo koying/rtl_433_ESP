@@ -97,6 +97,7 @@
     DECL(ge_coloreffects)            \
     DECL(generic_motion)             \
     DECL(generic_remote)             \
+    DECL(generic_remote_ev1527)             \
     DECL(generic_temperature_sensor) \
     DECL(geo_minim)                  \
     DECL(govee)                      \
