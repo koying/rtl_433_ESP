@@ -41,9 +41,9 @@ static int generic_remote_ev1527_callback(r_device *decoder, bitbuffer_t *bitbuf
 
     /* clang-format off */
     data = data_make(
-            "model",    "",             DATA_STRING, "Akhan-100F14",
+            "model",    "",             DATA_STRING, "Generic ev1527",
             "id",       "ID (20bit)",   DATA_FORMAT, "0x%x", DATA_INT, id,
-            "data",     "Data (4bit)",  DATA_STRING, "0x%x", DATA_INT, cmd,
+            "data",     "Data (4bit)",  DATA_FORMAT, "0x%x", DATA_INT, cmd,
             NULL);
     /* clang-format on */
 
