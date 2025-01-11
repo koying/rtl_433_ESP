@@ -41,7 +41,7 @@ static int generic_remote_ev1527_callback(r_device *decoder, bitbuffer_t *bitbuf
 
     /* clang-format off */
     data = data_make(
-            "model",    "",             DATA_STRING, "Generic ev1527",
+            "model",    "",             DATA_STRING, "Generic EV1527",
             "id",       "ID (20bit)",   DATA_FORMAT, "0x%x", DATA_INT, id,
             "data",     "Data (4bit)",  DATA_FORMAT, "0x%x", DATA_INT, cmd,
             NULL);
@@ -59,7 +59,7 @@ static char const *const output_fields[] = {
 };
 
 r_device const generic_remote_ev1527 = {
-        .name        = "Generic Remote SC226x EV1527",
+        .name        = "Generic Remote EV1527",
         .modulation  = OOK_PULSE_PWM,
         .short_width = 400,
         .long_width  = 1200,

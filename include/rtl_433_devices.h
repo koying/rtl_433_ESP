@@ -97,7 +97,6 @@
     DECL(ge_coloreffects)            \
     DECL(generic_motion)             \
     DECL(generic_remote)             \
-    DECL(generic_remote_ev1527)             \
     DECL(generic_temperature_sensor) \
     DECL(geo_minim)                  \
     DECL(govee)                      \
@@ -247,8 +246,10 @@
     DECL(X10_RF)                     \
     DECL(x10_sec)                    \
     DECL(yale_hsa)                   \
+
+    DECL(generic_remote_ev1527)             \
     /* Add new decoders here. */
-#  define NUMOF_OOK_DEVICES 157
+#  define NUMOF_OOK_DEVICES 158
 #  define NUMOF_FSK_DEVICES 80
 /* Add new decoders here. */
 #else
