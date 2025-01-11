@@ -246,7 +246,6 @@
     DECL(X10_RF)                     \
     DECL(x10_sec)                    \
     DECL(yale_hsa)                   \
-
     DECL(generic_remote_ev1527)             \
     /* Add new decoders here. */
 #  define NUMOF_OOK_DEVICES 158
